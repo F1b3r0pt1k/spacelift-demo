@@ -4,6 +4,11 @@ resource "azurerm_resource_group" "sh" {
   location = var.location
 }
 
+resource "azurerm_resource_group" "si" {
+  name     = "test-push-rg"
+  location = var.location
+}
+
 # Create AVD workspace
 resource "azurerm_virtual_desktop_workspace" "workspace" {
   name                = var.workspace
